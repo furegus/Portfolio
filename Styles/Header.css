@@ -1,17 +1,22 @@
 .folioHeader {
   background: rgb(241, 240, 239);
-  padding: 30px;
+  padding: 10px 30px;
   z-index: 9999;
   display:flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-evenly;
   position: fixed;
   opacity: 1;
   top: 0px;
-  bottom: 720px;
   left: 0px;
   right: 0px;
+  
+}
+
+
+.logo {
+  display: none;
 }
 
 .currentPageHead {
@@ -22,7 +27,7 @@
 li,a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 10;
   color: #333333;
   text-decoration: none;
 }
@@ -30,11 +35,12 @@ li,a {
 
 .pageMenu {
   list-style: none;
+  padding: 0px;
 }
 
 .pageMenu li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 .pageMenu li a {
@@ -43,4 +49,19 @@ li,a {
 
 .pageMenu li a:hover{
   color: rgb(121, 182, 36);
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    display: inline;
+  }
+
+  .folioHeader {
+    justify-content: space-between;
+  }
+
+  li,a {
+  size: 20px;
+  }
+
 }
