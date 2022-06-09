@@ -2,7 +2,7 @@
   background: rgb(241, 240, 239);
   padding: 10px 30px;
   z-index: 9999;
-  display:flex;
+  display:none;
   flex-direction: row;
   align-items: center;
   justify-content:space-evenly;
@@ -64,4 +64,10 @@ li,a {
   size: 20px;
   }
 
+}
+
+@media only screen and (min-height: 430px) {
+  .folioHeader {
+    display: flex;
+  }
 }
