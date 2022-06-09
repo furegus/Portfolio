@@ -33,21 +33,32 @@
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <polyline points="6 9 12 15 18 9" />
       </svg></div>
-<!-- 
+
       <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
       <script type="text/javascript">
         $(document).ready(function(){
-          if ($($window).width > 768) {
+          document.documentElement.style.setProperty
+          ("--primary-font-color", "#659d89")
+          document.documentElement.style.setProperty
+          ("--highlight-font-color", "rgb(121, 182, 36)")
+        })
+      </script>
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          // if ($($window).width > 768) {
              $(window).scroll(function(){
-              $("iframe").css("opacity" , 
-                $(window).scrollTop()/300)
+              // $("iframe").css("opacity" , 
+                // $(window).scrollTop()/300)
                 $("svg").css("opacity" , 1 -
                 $(window).scrollTop()/50)
           })
-          }
+          // }
          
         })
-        </script> -->
+        </script>
 
       <div class = iframeContainer>
         <iframe width="560" height="315" 

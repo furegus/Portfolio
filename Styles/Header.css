@@ -1,3 +1,5 @@
+@import "themes.css";
+
 .folioHeader {
   background: rgb(241, 240, 239);
   padding: 10px 30px;
@@ -20,7 +22,7 @@
 }
 
 .currentPageHead {
-  color: #659d89;
+  color: var(--primary-font-color);
 }
 
 
@@ -28,7 +30,7 @@ li,a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 10;
-  color: #333333;
+  color: var(--secondary-font-color);
   text-decoration: none;
 }
 
@@ -48,7 +50,7 @@ li,a {
 }
 
 .pageMenu li a:hover{
-  color: rgb(121, 182, 36);
+  color: var(--highlight-font-color);
 }
 
 @media only screen and (min-width: 768px) {
