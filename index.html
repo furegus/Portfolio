@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo Reel</title>
+
+    <link rel="stylesheet" href="Styles/Home.css">
+    <link rel="stylesheet" href="Styles/Header.css">
+
+  </head>
+
+  <body>
+    <div class = folioHeader>
+      <h3>Sooryansh Kapur</h3>
+
+      <nav>
+        <ul  class="pageMenu">
+          <li> <a class="currentPageHead" href="#top">Demo Reel</a></li>
+          <li> <a href="otherworks.html">Other Works</a></li>
+          <li> <a href="#">About</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+
+    <div class = Main>
+
+      <h1 style="margin-top: 100px; margin-bottom: 250px"
+      >DEMO REEL</h1>
+      <div class = chevron>
+      <svg xmlns="http://www.w3.org/2000/svg" width=5vw height=5vw viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <polyline points="6 9 12 15 18 9" />
+      </svg></div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $(window).scroll(function(){
+              $("iframe").css("opacity" , 
+                $(window).scrollTop()/300)
+                $("svg").css("opacity" , 1 -
+                $(window).scrollTop()/50)
+          })
+        })
+        </script>
+
+      <div class = iframeContainer>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/FSnn-DIQKms" 
+        title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write;
+          encrypted-media; gyroscope; picture-in-picture"
+           allowfullscreen></iframe>
+      </div>
+    
+    </div>
+    
+    
+  </body>
+</html>

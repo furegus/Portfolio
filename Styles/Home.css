@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Work+Sans:wght@300;400;500;700&display=swap');
+
+
+body {
+  scroll-behavior: smooth;
+  font-family: 'Work Sans', sans-serif;
+  padding-top: 250px;
+  background-color: rgb(241, 240, 239);
+}
+
+@keyframes fade2show {
+  0% {opacity: 0;}
+  0% {transform:translate(0px,-15px)}
+  100% {transform:translate(0px,0px)}
+  100% {opacity: 1;}
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align:center;
+  color: #659d89;
+  font-size: 5vw;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  animation-name: fade2show;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  
+}
+
+
+h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: #659d89;
+}
+
+.Main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 0px;
+  right: 0px;
+}
+
+@keyframes breathing_scale {
+  0% {transform: translate(0px, 5px);}
+  50% {transform: translate(0px);}
+  100% {transform: translate(0px, 5px);}
+}
+
+.chevron {
+  display: inline-block;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  animation-name: breathing_scale;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+.iframeContainer{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframeContainer iframe{
+  z-index: 9997;
+  position: absolute;
+  top:0;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  border: none;
+  border-radius: 10px;
+  opacity: 0;
+  zoom: 0.6;
+}
+
+.folioIMG {
+  width: 100%;
+}
+
+.folioGrid {
+  gap: 50px;
+  display: grid;
+  padding: 30px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px;
+}
+
+@media only screen and (min-width: 640px) {
+  .folioGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.folioItems {
+  box-shadow: 50px, 50px, 50px, rgba(1,1,1,1);
+  width: 100%;
+  position: relative;
+}
+
+.folioItems:hover {
+  box-shadow: 50px, 50px, 5px, rgba(1,1,1,1);
+}
+
+
+.folioItems:hover .folioIMG{
+  opacity: 0.2;
+  transform: translate(0px, -3px);
+  transition: opacity 0.1s;
+  transition: transform 0.2s;
+}
+
+
+.folioItems .tooltip{
+  z-index: 9998;
+  position: absolute;
+  color: #659d89;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400px;
+  font-size:2vw;
+  text-align: center;
+  opacity: 0;
+  top: 40%;
+  left: 0;
+  right: 0;
+  transition: opacity 0.3s;
+
+  pointer-events: none;
+}
+
+.folioItems:hover .tooltip{
+  opacity: 1;
+}
+
