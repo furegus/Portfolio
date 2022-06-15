@@ -33,6 +33,15 @@ h1 {
 }
 
 
+h2 {
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: gray;
+  align-self: flex-start;
+}
+
 h3 {
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
@@ -146,6 +155,65 @@ h3 {
 }
 
 
+.PageInfo{
+  position: relative;
+  width: 1000px;
+  align-items: center;
+  align-self: center;
+  left: 0px;
+  right: 0px;
+}
+
+.PageInfo p {
+  text-align: left;
+  align-self: flex-start;
+  margin: 10px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-family: Lato, Helvetica, sans-serif;
+  padding-right: 300px;
+  font-size: 20px;
+  /* align-self: center; */
+}
+
+.PageInfo .full-line {
+  
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-right: 300px;
+}
+
+
+.imgGrid {
+  row-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.imgGrid div {
+  width: inherit;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  column-gap: 15px;
+  flex-direction: row;
+  
+
+
+}
+
+
+.thumbnail {
+
+  width: 100%;
+  flex: 1;
+  object-fit: contain;
+}
+
+
 @media only screen and (min-width: 768px) {
 
   .folioGrid {
@@ -180,6 +248,9 @@ h3 {
 
 
 }
+
+
+
 
 
 
