@@ -37,8 +37,8 @@ h2 {
   text-align: left;
   font-family: 'Lato', sans-serif;
   font-weight: 600;
-  font-size: 36px;
-  color: gray;
+  color: var(--tertiary-font-color);
+  font-size: 50px;
   align-self: flex-start;
 }
 
@@ -103,6 +103,8 @@ h3 {
 
 .folioIMG {
   width: 100%;
+  height:  auto;
+  border-radius: 3px;
 }
 
 .folioGrid {
@@ -150,6 +152,10 @@ h3 {
   pointer-events: none;
 }
 
+.folioItems .tooltip p {
+  font-size: 1.5vw;
+}
+
 .folioItems:hover .tooltip{
   opacity: 1;
 }
@@ -167,24 +173,26 @@ h3 {
 .PageInfo p {
   text-align: left;
   align-self: flex-start;
-  margin: 10px;
-  margin-bottom: 40px;
-  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  margin: 10px 0px;
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--tertiary-font-color);
   font-family: Lato, Helvetica, sans-serif;
-  padding-right: 300px;
+  padding-right: 200px;
   font-size: 20px;
   /* align-self: center; */
 }
 
 .PageInfo .full-line {
   
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-right: 300px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 
 .imgGrid {
+  margin-top: 80px;
   row-gap: 15px;
   display: flex;
   flex-direction: column;
@@ -210,6 +218,7 @@ h3 {
 
   width: 100%;
   flex: 1;
+  border-radius: 3px;
   object-fit: contain;
 }
 

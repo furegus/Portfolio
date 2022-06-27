@@ -1,6 +1,7 @@
 :root {
   --primary-font-color : #659d89;
   --secondary-font-color : #333333;
+  --tertiary-font-color : #717171;
   --highlight-font-color : rgb(121, 182, 36);
   --test : #bf6882;
 }
