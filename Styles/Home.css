@@ -40,6 +40,10 @@ h2 {
   color: var(--tertiary-font-color);
   font-size: 50px;
   align-self: flex-start;
+  animation-name: fade2show;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
 }
 
 h3 {
@@ -165,6 +169,10 @@ h3 {
   align-self: center;
   left: 0px;
   right: 0px;
+  animation-name: fade2show;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
 }
 
 .PageInfo p {
@@ -177,6 +185,10 @@ h3 {
   color: var(--tertiary-font-color);
   font-family: Lato, Helvetica, sans-serif;
   font-size: 20px;
+  animation-name: fade2show;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
 }
 
 .PageInfo .full-line {
@@ -205,7 +217,7 @@ h3 {
 
   width: 100%;
   flex: 1;
-  border-radius: 3px;
+  border-radius: 4px;
   object-fit: contain;
 }
 
@@ -215,7 +227,7 @@ h3 {
   .folioGrid {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
-    padding: 50px 100px;
+    padding: 30px 100px;
   }
 
   .iframeContainer {
@@ -242,6 +254,10 @@ h3 {
     font-size: 13vh;
     margin-top: 100px;
     margin-bottom: 250px;
+  }
+
+  .PageInfo {
+    width: 60vw;
   }
 
   .PageInfo p {
