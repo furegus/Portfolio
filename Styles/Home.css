@@ -61,6 +61,27 @@ h3 {
   right: 0px;
 }
 
+.BIGBUTTON {
+  margin:0px 100px;
+  border: 3px solid rgba(1, 1, 1, 0.5);
+  border-radius: 6px;
+  transition: transform 0.4s;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.BIGBUTTON h2 {
+  color:var(--secondary-font-color);
+  transition: color 0.2s;
+}
+
+.BIGBUTTON:hover {
+  box-shadow: 7px 7px;
+}
+
+.BIGBUTTON:hover h2 {
+  color: var(--primary-font-color);
+}
+
 @keyframes breathing_scale {
   0% {transform: translate(0px, 5px);}
   50% {transform: translate(0px);}
