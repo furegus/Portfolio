@@ -1,7 +1,7 @@
 @import "themes.css";
 
 .folioHeader {
-  background: rgb(241, 240, 239);
+  background: white;
   padding: 10px 30px;
   z-index: 9999;
   display:none;
