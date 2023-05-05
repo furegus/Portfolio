@@ -121,8 +121,16 @@
     min-height: 100px;
   }
 
+  .u-section-2 .u-container-layout-1 {
+    padding: 0;
+  }
+
   .u-section-2 .u-layout-cell-2 {
     min-height: 100px;
+  }
+
+  .u-section-2 .u-container-layout-2 {
+    padding: 0;
   }
 }
 
@@ -309,7 +317,6 @@
 
 .u-section-5 .u-image-1 {
   min-height: 330px;
-  background-image: url("images/Detective4.png");
   background-position: 50% 50%;
 }
 
@@ -319,7 +326,6 @@
 
 .u-section-5 .u-image-2 {
   min-height: 330px;
-  background-image: url("images/Detective5.png");
   background-position: 50% 50%;
 }
 
@@ -359,8 +365,16 @@
     min-height: 220px;
   }
 
+  .u-section-5 .u-container-layout-1 {
+    padding: 0;
+  }
+
   .u-section-5 .u-image-2 {
     min-height: 220px;
+  }
+
+  .u-section-5 .u-container-layout-2 {
+    padding: 0;
   }
 }
 
@@ -492,7 +506,6 @@
 
 .u-section-7 .u-image-1 {
   min-height: 396px;
-  background-image: url("images/Detectivedamion_sheet.jpg");
   background-position: 50% 50%;
 }
 
@@ -502,7 +515,6 @@
 
 .u-section-7 .u-image-2 {
   min-height: 396px;
-  background-image: url("images/Detectiveliz_sheet.jpg");
   background-position: 50% 50%;
 }
 
@@ -542,8 +554,16 @@
     min-height: 263px;
   }
 
+  .u-section-7 .u-container-layout-1 {
+    padding: 0;
+  }
+
   .u-section-7 .u-image-2 {
     min-height: 263px;
+  }
+
+  .u-section-7 .u-container-layout-2 {
+    padding: 0;
   }
 }
 
